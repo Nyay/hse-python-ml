@@ -34,7 +34,7 @@ def parse_dictionary(text):
     >>> d == {'hello': ['привет', 'здравствуй']}
     True
     >>> d = parse_dictionary('hello - привет, здравствуй, здорова')
-    >>> d = {'hello': ['привет', 'здравствуй', 'здорова']}
+    >>> d == {'hello': ['привет', 'здравствуй', 'здорова']}
     True
     >>> d = parse_dictionary("мама - mommy, mom\\nпапа - daddy, father")
     >>> d == {'мама': ['mommy', 'mom'], 'папа': ['daddy', 'father']}
